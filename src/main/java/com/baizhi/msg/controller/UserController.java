@@ -17,6 +17,8 @@ public class UserController {
     @RequestMapping("queryAll")
     public String queryAll(String name, Map map) {
         List<User> list = userService.queryAll(name);
+        
+        
         map.put("userlist", list);
         return "index";
     }
