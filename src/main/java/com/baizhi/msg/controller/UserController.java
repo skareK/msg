@@ -20,6 +20,7 @@ public class UserController {
         
         
         map.put("userlist", list);
+        System.out.println("黄河,黄河,我是长江");
         return "index";
     }
 }
